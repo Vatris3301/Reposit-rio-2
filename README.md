@@ -1,3 +1,4 @@
+Inicio
 # Diagrama de Fluxo Simples
  
 Este é um exemplo de diagrama de fluxo simples usando Mermaid.
