@@ -1,12 +1,10 @@
-Inicio
-# Diagrama de Fluxo Simples
- 
-Este é um exemplo de diagrama de fluxo simples usando Mermaid.
- 
-```mermaid
-graph LR
-A[Inicio] --> B{Verificação}
-B --> C{Sim} --> D[Sucesso]
-B --> E{Não} --> F[Falha]
 
-
+erDiagram
+    Jesus }|..|{ DELIVERY-ADDRESS : has
+    CUSTOMER ||--o{ ORDER : places
+    CUSTOMER ||--o{ INVOICE : "liable for"
+    DELIVERY-ADDRESS ||--o{ ORDER : receives
+    INVOICE ||--|{ ORDER : covers
+    ORDER ||--|{ ORDER-ITEM : includes
+    PRODUCT-CATEGORY ||--|{ PRODUCT : contains
+    PRODUCT ||--o{ ORDER-ITEM : "ordered in"
